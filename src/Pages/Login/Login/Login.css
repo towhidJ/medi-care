@@ -1,0 +1,7 @@
+.loginInput{
+    @apply border border-transparent border-black focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent  py-2 px-2
+}
+
+.loginLabel{
+    @apply mb-2 uppercase font-bold text-lg
+}
