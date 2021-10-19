@@ -13,7 +13,7 @@ const Contact = () => {
                 >
                     Contact Information
                 </p>
-                <h1>Let's Talk About For Your Business</h1>
+                <h1>Let's Talk About For Your Health</h1>
                 <p>
                     Proin gravida nibh vel velit auctor aliquet. Aenean
                     sollicitudin, lorem quis bibendum auctor, nisi elit

@@ -16,9 +16,9 @@ const Footer = () => {
                             </Link>
                             <Link
                                 className="text-decoration-none text-white mx-2"
-                                to="/course-home"
+                                to="/services"
                             >
-                                Course
+                                Service
                             </Link>
                         </div>
                         <div className="my-2">

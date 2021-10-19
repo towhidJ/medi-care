@@ -4,14 +4,17 @@ import bannerImg from "../../../images/3.png";
 const Banner = () => {
     return (
         <div>
-            <section class=" bg-blue-50 container-fluid md:flex justify-around items-center pt-12 px-8">
+            <section
+                class="  container-fluid md:flex justify-around items-center pt-12 px-8"
+                style={{ backgroundColor: "#264653" }}
+            >
                 <div class="space-y-4">
                     <h1 class="text-4xl md:text-7xl font-bold uppercase">
-                        <span class="text-green-700">Best Medical Center</span>
+                        <span class="text-yellow-300">Best Medical Center</span>
                         <br />
-                        <span class="text-gray-800">In Bangladesh</span>
+                        <span class="text-white">In Chittagong</span>
                     </h1>
-                    <p class="w-2/3">
+                    <p class="w-2/3 text-white">
                         {" "}
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Impedit am aliquam beatae, aut magnam.

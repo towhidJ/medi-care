@@ -10,7 +10,7 @@ const Header = () => {
         menu.classList.toggle("hidden");
     };
     return (
-        <div className="bg-white shadow-lg sticky top-0 z-50">
+        <div className=" shadow-lg sticky top-0 z-50 nav-bg">
             <nav className="flex items-center justify-between flex-wrap bg-teal-500 py-6 container mx-auto ">
                 <div className="flex items-center flex-shrink-0 text-white mr-6 w-1/4">
                     <img src="icons/Group 33072.png" />

@@ -1,4 +1,8 @@
 .link{
-    @apply font-bold text-lg ;
-    color:deeppink;
+    @apply font-bold text-base hover:text-yellow-300 ;
+    color:white;
+}
+
+.nav-bg{
+    background-color:#264653
 }
