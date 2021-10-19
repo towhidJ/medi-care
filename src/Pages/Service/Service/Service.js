@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Service = (props) => {
-    const { name, img, description, key } = props.service;
+    const { name, icon, img, description, key } = props.service;
     console.log(props.service);
     return (
         <div className="flex justify-center items-center mt-5">
@@ -19,7 +19,7 @@ const Service = (props) => {
                             {description.slice(0, 100)}
                         </p>
                         <Link
-                            to={`d/${key}`}
+                            to={`service-details/${key}`}
                             className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center"
                             href="#"
                         >

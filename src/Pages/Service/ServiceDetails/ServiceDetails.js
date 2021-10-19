@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams } from "react-router";
+import { Link } from "react-router-dom";
 import useDataBase from "./../../../hooks/useDataBase";
 import "./ServiceDetails.css";
 let data;
@@ -78,9 +79,12 @@ const ServiceDetails = () => {
                             <h5>Call us</h5>
                             <h5>+88018XXXXXXXX</h5>
                         </div>
-                        <button className="mt-2 px-5 py-3 bg-purple-600 rounded text-white font-bold ">
+                        <Link
+                            to="/appointment"
+                            className="mt-2 px-5 py-3 bg-purple-600 rounded text-center text-white font-bold "
+                        >
                             Appointment Now
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </div>

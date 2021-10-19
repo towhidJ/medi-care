@@ -9,7 +9,7 @@
         "star": 5,
         "description":"An ophthalmologist is a medical or osteopathic doctor who specializes in eye and vision care. Ophthalmologists differ from optometrists and opticians in their levels of training and in what they can diagnose and treat.        When it's time to get your eyes checked, make sure you are seeing the right eye care professional for your needs. Each member of the eye care team plays an important role in providing eye care, but many people confuse the different providers and their roles in maintaining your eye health. The levels of training and expertise—and what they are allowed to do for you—are the major difference between the types of eye care provider.",      
         "starCount": 3245,
-        "img": "https://i.ibb.co/v1Rvvxc/csharp.jpg",
+        "img": "https://i.ibb.co/Wk10vvW/dental.jpg",
         "icon":"https://i.ibb.co/C09T7cX/Dental-Care.png"
     },
     {
@@ -22,12 +22,12 @@
         "star": 5,
         "description":"An ophthalmologist is a medical or osteopathic doctor who specializes in eye and vision care. Ophthalmologists differ from optometrists and opticians in their levels of training and in what they can diagnose and treat.        When it's time to get your eyes checked, make sure you are seeing the right eye care professional for your needs. Each member of the eye care team plays an important role in providing eye care, but many people confuse the different providers and their roles in maintaining your eye health. The levels of training and expertise—and what they are allowed to do for you—are the major difference between the types of eye care provider.",      
         "starCount": 3245,
-        "img": "https://i.ibb.co/v1Rvvxc/csharp.jpg",
+        "img": "https://i.ibb.co/f8gCNS4/cosmetic.jpg",
         "icon":"https://i.ibb.co/M66gF9Z/Cosmetic-Surgery.png"
     },
     {
         "key": 3,
-        "department": "Neurology",
+        "department": "Gynecology",
         "name": "Gynecology",
         "intensivist":"Dr.Fahad Jhon",
         "eventHours":"Mon-Sun",
@@ -35,7 +35,7 @@
         "star": 5,
         "description":"An ophthalmologist is a medical or osteopathic doctor who specializes in eye and vision care. Ophthalmologists differ from optometrists and opticians in their levels of training and in what they can diagnose and treat.        When it's time to get your eyes checked, make sure you are seeing the right eye care professional for your needs. Each member of the eye care team plays an important role in providing eye care, but many people confuse the different providers and their roles in maintaining your eye health. The levels of training and expertise—and what they are allowed to do for you—are the major difference between the types of eye care provider.",      
         "starCount": 3245,
-        "img": "https://i.ibb.co/v1Rvvxc/csharp.jpg",
+        "img": "https://i.ibb.co/Yf2GkDQ/Gynecology.jpg",
         "icon":"https://i.ibb.co/MVnydMb/Gynecology.png"
     },
     {
@@ -48,7 +48,7 @@
         "star": 5,
         "description":"An ophthalmologist is a medical or osteopathic doctor who specializes in eye and vision care. Ophthalmologists differ from optometrists and opticians in their levels of training and in what they can diagnose and treat.        When it's time to get your eyes checked, make sure you are seeing the right eye care professional for your needs. Each member of the eye care team plays an important role in providing eye care, but many people confuse the different providers and their roles in maintaining your eye health. The levels of training and expertise—and what they are allowed to do for you—are the major difference between the types of eye care provider.",      
         "starCount": 3245,
-        "img": "https://i.ibb.co/v1Rvvxc/csharp.jpg",
+        "img": "https://i.ibb.co/S3b4DyF/neurology.jpg",
         "icon":"https://i.ibb.co/gjXSbrb/Neurology.png"
     },
     {
@@ -59,14 +59,14 @@
         "eventHours":"Mon-Sat",
         "price": 1120,
         "star": 5,
-        "description":"An ophthalmologist is a medical or osteopathic doctor who specializes in eye and vision care. Ophthalmologists differ from optometrists and opticians in their levels of training and in what they can diagnose and treat.        When it's time to get your eyes checked, make sure you are seeing the right eye care professional for your needs. Each member of the eye care team plays an important role in providing eye care, but many people confuse the different providers and their roles in maintaining your eye health. The levels of training and expertise—and what they are allowed to do for you—are the major difference between the types of eye care provider.",      
+        "description":"Gastroenterology is the branch of medicine focused on the digestive system and its disorders. Diseases affecting the gastrointestinal tract, which include the organs from mouth into anus, along the alimentary canal, are the focus of this speciality. Physicians practicing in this field are called gastroenterologists.",      
         "starCount": 3245,
-        "img": "https://i.ibb.co/v1Rvvxc/csharp.jpg",
+        "img": "https://i.ibb.co/WG7FN0R/Gastrology.jpg",
         "icon":"https://i.ibb.co/g6jfxJ8/gastrology.png"
     },
     {
         "key": 6,
-        "department": "Surgery",
+        "department": "Ophthalmology",
         "name": "Ophthalmology",
         "intensivist":"Dr.Mickel Jhon",
         "eventHours":"Sun-Thu",
@@ -74,10 +74,55 @@
         "star": 5,
         "description":"An ophthalmologist is a medical or osteopathic doctor who specializes in eye and vision care. Ophthalmologists differ from optometrists and opticians in their levels of training and in what they can diagnose and treat.        When it's time to get your eyes checked, make sure you are seeing the right eye care professional for your needs. Each member of the eye care team plays an important role in providing eye care, but many people confuse the different providers and their roles in maintaining your eye health. The levels of training and expertise—and what they are allowed to do for you—are the major difference between the types of eye care provider.",      
         "starCount": 3245,
-        "img": "https://i.ibb.co/v1Rvvxc/csharp.jpg",
+        "img": "https://i.ibb.co/k0Wg4Sb/Ophthalmology.jpg",
         "icon":"https://i.ibb.co/PDPT6Cc/Ophthalmology.png"
+    },
+    {
+        "key": 7,
+        "department": "Surgery",
+        "name": "Surgery",
+        "intensivist":"Dr.Mickel Jhon",
+        "eventHours":"Sun-Thu",
+        "price": 1220,
+        "star": 5,
+        "description":"Surgery is a medical or dental specialty that uses operative manual and instrumental techniques on a person to investigate or treat a pathological condition such as a disease or injury, to help improve bodily function, appearance, or to repair unwanted ruptured areas.The act of performing surgery may be called a surgical procedure, operation, or simply "surgery". In this context, the verb "operate" means to perform surgery. The adjective surgical means pertaining to surgery; e.g. surgical instruments or surgical nurse. The person or subject on which the surgery is performed can be a person or an animal. A surgeon is a person who practices surgery and a surgeon's assistant is a person who practices surgical assistance. A surgical team is made up of the surgeon, the surgeon's assistant, an anaesthetist, a circulating nurse and a surgical technologist. Surgery usually spans from minutes to hours, but it is typically not an ongoing or periodic type of treatment. The term "surgery" can also refer to the place where surgery is performed, or, in British English, simply the office of a physician,[1] dentist, or veterinarian.",      
+        "starCount": 3245,
+        "img": "https://i.ibb.co/d7ssC1n/surgery.jpg",
+        "icon":"https://i.ibb.co/PDPT6Cc/Ophthalmology.png"
+    },
+    {
+        "key": 8,
+        "department": "Radiology",
+        "name": "Radiology",
+        "intensivist":"Dr.Mickel Jhon",
+        "eventHours":"Sun-Thu",
+        "price": 1220,
+        "star": 5,
+        "description":"Radiologists are medical doctors that specialize in diagnosing and treating injuries and diseases using medical imaging (radiology) procedures (exams/tests) such as X-rays, computed tomography (CT), magnetic resonance imaging (MRI), nuclear medicine, positron emission tomography (PET) and ultrasound.Radiologists complete at least 13 years of training, including medical school, a four-year residency, and most often, an additional one- or two-year fellowship of very specialized training, such as radiation oncology, pediatric radiology, or interventional radiology. They are certified by the American Board of Radiology, and they have exacting requirements for continuing medical education throughout their practicing years.",      
+        "starCount": 3245,
+        "img": "https://i.ibb.co/v30ywvd/radiology.jpg",
+        "icon":"https://i.ibb.co/PDPT6Cc/Ophthalmology.png"
+    },
+    {
+        "key": 9,
+        "department": "Cardiology",
+        "name": "Cardiology",
+        "intensivist":"Dr.Mickel Jhon",
+        "eventHours":"Sun-Thu",
+        "price": 1220,
+        "star": 5,
+        "description":"Cardiology is the study and treatment of disorders of the heart and the blood vessels. A person with heart disease or cardiovascular disease may be referred to a cardiologist. Cardiology is a branch of internal medicine. A cardiologist is not the same as a cardiac surgeon. A cardiac surgeon opens the chest and performs heart surgery. A cardiologist specializes in diagnosing and treating diseases of the cardiovascular system. The cardiologist will carry out tests, and they may perform some procedures, such as heart catheterizations, angioplasty, or inserting a pacemaker.Heart disease relates specifically to the heart, while cardiovascular disease affects the heart, the blood vessels, or both.To become a cardiologist in the United States, it is necessary to complete 4 years of medical school, 3 years of training in internal medicine, and at least 3 years specializing in cardiology.",      
+        "starCount": 3245,
+        "img": "https://i.ibb.co/Cm9mfRG/Cardiology.jpg",
+        "icon":"https://i.ibb.co/Cm9mfRG/Cardiology.jpg"
     }
 ]
+
+
+
+
+
+
 
 
 

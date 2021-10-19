@@ -2,10 +2,12 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import AuthProvider from "./contexts/AuthProvider";
 import ServiceProvider from "./contexts/ServiceProvider";
+import About from "./Pages/About/About";
 import Appointment from "./Pages/Appointment/Appointment";
 import Contact from "./Pages/Contact/Contact";
 import Home from "./Pages/Home/Home/Home";
 import Login from "./Pages/Login/Login/Login";
+import PrivateRoute from "./Pages/Login/PrivateRoute/PrivateRoute";
 import Register from "./Pages/Register/Register";
 import ServiceDetails from "./Pages/Service/ServiceDetails/ServiceDetails";
 import Services from "./Pages/Service/Services/Services";
@@ -23,11 +25,11 @@ function App() {
                             <Route exact path="/">
                                 <Home></Home>
                             </Route>
-                            <Route path="/f">
+                            <Route path="/services">
                                 <Services></Services>
                             </Route>
 
-                            <Route path="/d/:id">
+                            <Route path="/service-details/:id">
                                 <ServiceDetails></ServiceDetails>
                             </Route>
                             <Route path="/login">
@@ -39,9 +41,12 @@ function App() {
                             <Route path="/contact">
                                 <Contact></Contact>
                             </Route>
-                            <Route path="/appointment">
-                                <Appointment></Appointment>
+                            <Route path="/about">
+                                <About></About>
                             </Route>
+                            <PrivateRoute path="/appointment">
+                                <Appointment></Appointment>
+                            </PrivateRoute>
                             <Route path="*">
                                 <p>Not found</p>
                             </Route>

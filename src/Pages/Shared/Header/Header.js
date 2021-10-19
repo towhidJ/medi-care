@@ -40,6 +40,20 @@ const Header = () => {
                         </Link>
 
                         <Link
+                            to="/services"
+                            className="link block mt-4 lg:inline-block lg:mt-0  hover:text-black mr-4 link"
+                        >
+                            Services
+                        </Link>
+
+                        <Link
+                            to="/about"
+                            className="link block mt-4 lg:inline-block lg:mt-0  hover:text-black mr-4 link"
+                        >
+                            About Us
+                        </Link>
+
+                        <Link
                             to="/contact"
                             className="link block mt-4 lg:inline-block lg:mt-0  hover:text-black mr-4"
                         >
@@ -49,7 +63,7 @@ const Header = () => {
                         {user?.email ? (
                             <button
                                 onClick={logOut}
-                                className="block mt-4 lg:inline-block lg:mt-0  hover:text-black mr-4"
+                                className="block link mt-4 lg:inline-block lg:mt-0  hover:text-black mr-4"
                             >
                                 Logout
                             </button>
@@ -69,6 +83,17 @@ const Header = () => {
                                 SignUp
                             </Link>
                         )}
+                        {
+                            <Link to="/" className="mr-4">
+                                {user?.displayName}
+                            </Link>
+                        }
+                        <Link
+                            to="/appointment"
+                            className="bg-red-400 px-5 py-3 text-white font-bold hover:bg-blue-600"
+                        >
+                            Appointment
+                        </Link>
                     </div>
                 </div>
             </nav>
