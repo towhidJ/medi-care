@@ -1,5 +1,7 @@
 import React from "react";
 import doctor1 from "../../../images/1.png";
+import doctor2 from "../../../images/2.png";
+import doctor3 from "../../../images/3.png";
 const Doctors = () => {
     return (
         <>
@@ -32,13 +34,13 @@ const Doctors = () => {
                         <div className="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm mb-5">
                             <img
                                 className="rounded-t-lg h-64"
-                                src={doctor1}
+                                src={doctor2}
                                 alt=""
                             />
 
                             <div className="p-5 text-center">
                                 <h5 className="text-gray-900 font-bold text-2xl tracking-tight mb-2">
-                                    Dr. Farnandoz
+                                    Dr. Fahad
                                 </h5>
 
                                 <p className="font-normal text-center text-gray-700 mb-3">
@@ -53,13 +55,13 @@ const Doctors = () => {
                         <div className="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm mb-5">
                             <img
                                 className="rounded-t-lg h-64"
-                                src={doctor1}
+                                src={doctor3}
                                 alt=""
                             />
 
                             <div className="p-5 text-center">
                                 <h5 className="text-gray-900 font-bold text-2xl tracking-tight mb-2">
-                                    Dr. Farnandoz
+                                    Dr. Alisa mari
                                 </h5>
 
                                 <p className="font-normal text-center text-gray-700 mb-3">

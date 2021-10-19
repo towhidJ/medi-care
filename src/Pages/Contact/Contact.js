@@ -21,9 +21,9 @@ const Contact = () => {
                     odio sit amet nibh vulputate cursus a sit amet mauris.
                 </p>
             </div>
-            <div className="  flex justify-around items-center">
-                <div>
-                    <div className="  flex justify-between">
+            <div className="md:flex  md:justify-around md:items-center skew-y-5">
+                <div className="mb-3 shadow-lg px-10 py-3">
+                    <div className=" md:flex justify-between">
                         <div className="mr-4">
                             <h1>
                                 <i className="fas fa-phone    "></i>
@@ -40,8 +40,8 @@ const Contact = () => {
                     </div>
                 </div>
 
-                <div>
-                    <div className="  flex justify-between">
+                <div className="mb-3 shadow-lg px-10 py-3">
+                    <div className="  md:flex justify-between">
                         <div>
                             <h1 className="mr-4">
                                 <i className="fa fa-location-arrow"></i>
@@ -53,13 +53,12 @@ const Contact = () => {
                         </div>
                     </div>
                     <div style={{ fontSize: "24px" }} className="font-medium">
-                        <p>Chittagong</p>
-                        <p>Bangladesh</p>
+                        <p>Chittagong Bangladesh</p>
                     </div>
                 </div>
 
-                <div>
-                    <div className="  d-flex justify-content-between">
+                <div className="mb-3 shadow-lg px-10 py-3">
+                    <div className="  md:flex justify-between">
                         <div>
                             <h1 className="me-4">
                                 <i className="fas fa-mail-bulk    "></i>

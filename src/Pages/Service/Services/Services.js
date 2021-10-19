@@ -1,9 +1,9 @@
 import React from "react";
 import Service from "../Service/Service";
-import useServices from "./../../../hooks/useServices";
+import useDataBase from "./../../../hooks/useDataBase";
 
 const Services = () => {
-    const { services } = useServices();
+    const { services } = useDataBase();
     // const [service, setService] = useState([]);
     // useEffect(() => {
     //     fetch("./servicesApi.JSON")

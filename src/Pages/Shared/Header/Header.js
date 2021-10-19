@@ -13,7 +13,7 @@ const Header = () => {
         <div className=" shadow-lg sticky top-0 z-50 nav-bg">
             <nav className="flex items-center justify-between flex-wrap bg-teal-500 py-6 container mx-auto ">
                 <div className="flex items-center flex-shrink-0 text-white mr-6 w-1/4">
-                    <img src="icons/Group 33072.png" />
+                    <h1 className="text-white uppercase">SHC</h1>
                 </div>
                 <div className="block lg:hidden">
                     <button
@@ -52,7 +52,12 @@ const Header = () => {
                         >
                             About Us
                         </Link>
-
+                        <Link
+                            to="/blog"
+                            className="link block mt-4 lg:inline-block lg:mt-0  hover:text-black mr-4"
+                        >
+                            Blog
+                        </Link>
                         <Link
                             to="/contact"
                             className="link block mt-4 lg:inline-block lg:mt-0  hover:text-black mr-4"
@@ -75,16 +80,12 @@ const Header = () => {
                                 Login
                             </Link>
                         )}
-                        {!user?.email && (
+
+                        {
                             <Link
-                                to="/register"
+                                to="/"
                                 className="link block mt-4 lg:inline-block lg:mt-0  hover:text-black mr-4"
                             >
-                                SignUp
-                            </Link>
-                        )}
-                        {
-                            <Link to="/" className="mr-4">
                                 {user?.displayName}
                             </Link>
                         }

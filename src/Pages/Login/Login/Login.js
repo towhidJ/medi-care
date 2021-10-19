@@ -1,5 +1,5 @@
 import { yupResolver } from "@hookform/resolvers/yup";
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useHistory, useLocation } from "react-router";
 import { Link } from "react-router-dom";
@@ -7,8 +7,9 @@ import * as Yup from "yup";
 import useAuth from "./../../../hooks/useAuth";
 import "./Login.css";
 const Login = () => {
-    const { signInUsingGoogle, setUser, setIsLoading,signInWithEmail } = useAuth();
-    const [error,setError] = useState("");
+    const { signInUsingGoogle, setUser, setIsLoading, signInWithEmail } =
+        useAuth();
+    const [error, setError] = useState("");
     const location = useLocation();
     const history = useHistory();
     const redirect_url = location.state?.from || "/";
@@ -32,20 +33,21 @@ const Login = () => {
             });
     };
 
-    const loginWithEmail = (data,e) =>{
+    const loginWithEmail = (data, e) => {
         e.preventDefault();
-        const {email,password} = data;
-        signInWithEmail(email,password)
+        const { email, password } = data;
+        signInWithEmail(email, password)
             .then((result) => {
                 setUser(result.user);
                 history.push(redirect_url);
-        }).catch((error) => {
-            setError(error.message);
-        })
+            })
+            .catch((error) => {
+                setError(error.message);
+            })
             .finally(() => {
                 setIsLoading(false);
             });
-    }
+    };
 
     const onSubmit = (data) => console.log(data);
     const { register, handleSubmit, formState } = useForm(formOptions);
@@ -105,15 +107,6 @@ const Login = () => {
                             >
                                 <i className="fab fa-google me-2"></i> Sign in
                                 with Google
-                            </button>
-                        </div>
-                        <div className="w-full bg-blue-700 text-white text-center font-extrabold text-xl p-2 mb-2">
-                            <button
-                                className="btn btn-facebook btn-login text-uppercase fw-bold"
-                                type="button"
-                            >
-                                <i className="fab fa-facebook-f me-2"></i> Sign
-                                in with Facebook
                             </button>
                         </div>
                     </div>

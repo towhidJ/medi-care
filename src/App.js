@@ -4,6 +4,7 @@ import AuthProvider from "./contexts/AuthProvider";
 import ServiceProvider from "./contexts/ServiceProvider";
 import About from "./Pages/About/About";
 import Appointment from "./Pages/Appointment/Appointment";
+import Blog from "./Pages/Blog/Blog";
 import Contact from "./Pages/Contact/Contact";
 import Home from "./Pages/Home/Home/Home";
 import Login from "./Pages/Login/Login/Login";
@@ -31,6 +32,9 @@ function App() {
 
                             <Route path="/service-details/:id">
                                 <ServiceDetails></ServiceDetails>
+                            </Route>
+                            <Route path="/blog">
+                                <Blog></Blog>
                             </Route>
                             <Route path="/login">
                                 <Login></Login>
