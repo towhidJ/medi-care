@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import AuthProvider from "./contexts/AuthProvider";
 import ServiceProvider from "./contexts/ServiceProvider";
+import Appointment from "./Pages/Appointment/Appointment";
 import Contact from "./Pages/Contact/Contact";
 import Home from "./Pages/Home/Home/Home";
 import Login from "./Pages/Login/Login/Login";
@@ -37,6 +38,9 @@ function App() {
                             </Route>
                             <Route path="/contact">
                                 <Contact></Contact>
+                            </Route>
+                            <Route path="/appointment">
+                                <Appointment></Appointment>
                             </Route>
                             <Route path="*">
                                 <p>Not found</p>

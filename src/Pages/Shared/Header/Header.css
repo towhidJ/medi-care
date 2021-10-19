@@ -1,0 +1,4 @@
+.link{
+    @apply font-bold text-lg ;
+    color:deeppink;
+}

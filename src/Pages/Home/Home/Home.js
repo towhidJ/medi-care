@@ -6,6 +6,8 @@ import Support from "../Support/Support";
 
 const Home = () => {
     const { services } = useServices();
+    const size = 6;
+    const items = services.slice(0, size);
     return (
         <div className="w-full">
             <Banner></Banner>
@@ -14,7 +16,7 @@ const Home = () => {
             </h1>
 
             <div className="grid md:grid-cols-3 justify-center items-center gap-2 container mx-auto ">
-                {services.map((service) => (
+                {items.map((service) => (
                     <div className="bg-white hover:bg-gray-100 text-center shadow-md border border-gray-200 rounded-lg max-w-sm mb-5 px-4 ">
                         <img
                             src={service.icon}

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import useAuth from "./../../../hooks/useAuth";
+import "./Header.css";
 
 const Header = () => {
     const { user, logOut } = useAuth();
@@ -9,8 +10,8 @@ const Header = () => {
         menu.classList.toggle("hidden");
     };
     return (
-        <div className="bg-yellow-100">
-            <nav className="flex items-center justify-between flex-wrap bg-teal-500 py-6 container mx-auto">
+        <div className="bg-white shadow-lg sticky top-0 z-50">
+            <nav className="flex items-center justify-between flex-wrap bg-teal-500 py-6 container mx-auto ">
                 <div className="flex items-center flex-shrink-0 text-white mr-6 w-1/4">
                     <img src="icons/Group 33072.png" />
                 </div>
@@ -33,14 +34,14 @@ const Header = () => {
                     <div className="text-sm   lg:flex-grow ">
                         <Link
                             to="/"
-                            className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+                            className="link block mt-4 lg:inline-block lg:mt-0  hover:text-black mr-4 link"
                         >
                             Home
                         </Link>
 
                         <Link
                             to="/contact"
-                            className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+                            className="link block mt-4 lg:inline-block lg:mt-0  hover:text-black mr-4"
                         >
                             Contact Us
                         </Link>
@@ -48,14 +49,14 @@ const Header = () => {
                         {user?.email ? (
                             <button
                                 onClick={logOut}
-                                className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+                                className="block mt-4 lg:inline-block lg:mt-0  hover:text-black mr-4"
                             >
                                 Logout
                             </button>
                         ) : (
                             <Link
                                 to="/login"
-                                className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+                                className="link block mt-4 lg:inline-block lg:mt-0  hover:text-black mr-4"
                             >
                                 Login
                             </Link>
@@ -63,7 +64,7 @@ const Header = () => {
                         {!user?.email && (
                             <Link
                                 to="/register"
-                                className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+                                className="link block mt-4 lg:inline-block lg:mt-0  hover:text-black mr-4"
                             >
                                 SignUp
                             </Link>
