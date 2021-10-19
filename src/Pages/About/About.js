@@ -4,7 +4,7 @@ import AboutMission from "./AboutMission";
 
 const About = () => {
     return (
-        <div className="py-2">
+        <div className="py-2 px-5">
             <AboutMission></AboutMission>
             <div className="text-center mt-2 container mx-auto ">
                 <div className="font-bold">
@@ -18,7 +18,7 @@ const About = () => {
                     execution Our purpose is to deliver excellence in service
                     and Our purpose is to deliver excellence.
                 </p>
-                <div className="flex justify-between">
+                <div className="grid md:grid-cols-3 gap-5 justify-between">
                     <div className="about-card card w-50 mr-2">
                         <div className="card-body">
                             <h5 className="text-2xl font-bold">
