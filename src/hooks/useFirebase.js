@@ -1,7 +1,9 @@
 import {
+    createUserWithEmailAndPassword,
     getAuth,
     GoogleAuthProvider,
     onAuthStateChanged,
+    signInWithEmailAndPassword,
     signInWithPopup,
     signOut,
 } from "firebase/auth";
@@ -21,6 +23,15 @@ const useFirebase = () => {
         const googleProvider = new GoogleAuthProvider();
 
         return signInWithPopup(auth, googleProvider);
+    };
+
+    const signUpWithEmail = (email, password) => {
+        console.log("reg-", email, password);
+        return createUserWithEmailAndPassword(auth, email, password);
+    };
+
+    const signInWithEmail = (email, password) => {
+        return signInWithEmailAndPassword(auth, email, password);
     };
 
     // observe user state change
@@ -50,6 +61,8 @@ const useFirebase = () => {
         logOut,
         setIsLoading,
         setUser,
+        signUpWithEmail,
+        signInWithEmail,
     };
 };
 

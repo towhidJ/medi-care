@@ -1,0 +1,83 @@
+[
+    {
+        "key": 1,
+        "department": "Dental",
+        "name": "Dental Care",
+        "intensivist":"Dr.Ema Jhon",
+        "eventHours":"Mon-Sun",
+        "price": 2300,
+        "star": 5,
+        "description":"An ophthalmologist is a medical or osteopathic doctor who specializes in eye and vision care. Ophthalmologists differ from optometrists and opticians in their levels of training and in what they can diagnose and treat.        When it's time to get your eyes checked, make sure you are seeing the right eye care professional for your needs. Each member of the eye care team plays an important role in providing eye care, but many people confuse the different providers and their roles in maintaining your eye health. The levels of training and expertise—and what they are allowed to do for you—are the major difference between the types of eye care provider.",      
+        "starCount": 3245,
+        "img": "https://i.ibb.co/v1Rvvxc/csharp.jpg",
+        "icon":"https://i.ibb.co/C09T7cX/Dental-Care.png"
+    },
+    {
+        "key": 2,
+        "department": "Surgery",
+        "name": "Cosmetic Surgery",
+        "intensivist":"Dr.Ema Adam",
+        "eventHours":"Mon-Sun",
+        "price": 2200,
+        "star": 5,
+        "description":"An ophthalmologist is a medical or osteopathic doctor who specializes in eye and vision care. Ophthalmologists differ from optometrists and opticians in their levels of training and in what they can diagnose and treat.        When it's time to get your eyes checked, make sure you are seeing the right eye care professional for your needs. Each member of the eye care team plays an important role in providing eye care, but many people confuse the different providers and their roles in maintaining your eye health. The levels of training and expertise—and what they are allowed to do for you—are the major difference between the types of eye care provider.",      
+        "starCount": 3245,
+        "img": "https://i.ibb.co/v1Rvvxc/csharp.jpg",
+        "icon":"https://i.ibb.co/M66gF9Z/Cosmetic-Surgery.png"
+    },
+    {
+        "key": 3,
+        "department": "Neurology",
+        "name": "Gynecology",
+        "intensivist":"Dr.Fahad Jhon",
+        "eventHours":"Mon-Sun",
+        "price": 2200,
+        "star": 5,
+        "description":"An ophthalmologist is a medical or osteopathic doctor who specializes in eye and vision care. Ophthalmologists differ from optometrists and opticians in their levels of training and in what they can diagnose and treat.        When it's time to get your eyes checked, make sure you are seeing the right eye care professional for your needs. Each member of the eye care team plays an important role in providing eye care, but many people confuse the different providers and their roles in maintaining your eye health. The levels of training and expertise—and what they are allowed to do for you—are the major difference between the types of eye care provider.",      
+        "starCount": 3245,
+        "img": "https://i.ibb.co/v1Rvvxc/csharp.jpg",
+        "icon":"https://i.ibb.co/MVnydMb/Gynecology.png"
+    },
+    {
+        "key": 4,
+        "department": "Neurology",
+        "name": "Neurology",
+        "intensivist":"Dr.Sukkor",
+        "eventHours":"Mon-Sun",
+        "price": 2200,
+        "star": 5,
+        "description":"An ophthalmologist is a medical or osteopathic doctor who specializes in eye and vision care. Ophthalmologists differ from optometrists and opticians in their levels of training and in what they can diagnose and treat.        When it's time to get your eyes checked, make sure you are seeing the right eye care professional for your needs. Each member of the eye care team plays an important role in providing eye care, but many people confuse the different providers and their roles in maintaining your eye health. The levels of training and expertise—and what they are allowed to do for you—are the major difference between the types of eye care provider.",      
+        "starCount": 3245,
+        "img": "https://i.ibb.co/v1Rvvxc/csharp.jpg",
+        "icon":"https://i.ibb.co/gjXSbrb/Neurology.png"
+    },
+    {
+        "key": 5,
+        "department": "Surgery",
+        "name": "Gastrology",
+        "intensivist":"Dr.Kabir",
+        "eventHours":"Mon-Sat",
+        "price": 1120,
+        "star": 5,
+        "description":"An ophthalmologist is a medical or osteopathic doctor who specializes in eye and vision care. Ophthalmologists differ from optometrists and opticians in their levels of training and in what they can diagnose and treat.        When it's time to get your eyes checked, make sure you are seeing the right eye care professional for your needs. Each member of the eye care team plays an important role in providing eye care, but many people confuse the different providers and their roles in maintaining your eye health. The levels of training and expertise—and what they are allowed to do for you—are the major difference between the types of eye care provider.",      
+        "starCount": 3245,
+        "img": "https://i.ibb.co/v1Rvvxc/csharp.jpg",
+        "icon":"https://i.ibb.co/g6jfxJ8/gastrology.png"
+    },
+    {
+        "key": 6,
+        "department": "Surgery",
+        "name": "Ophthalmology",
+        "intensivist":"Dr.Mickel Jhon",
+        "eventHours":"Sun-Thu",
+        "price": 1220,
+        "star": 5,
+        "description":"An ophthalmologist is a medical or osteopathic doctor who specializes in eye and vision care. Ophthalmologists differ from optometrists and opticians in their levels of training and in what they can diagnose and treat.        When it's time to get your eyes checked, make sure you are seeing the right eye care professional for your needs. Each member of the eye care team plays an important role in providing eye care, but many people confuse the different providers and their roles in maintaining your eye health. The levels of training and expertise—and what they are allowed to do for you—are the major difference between the types of eye care provider.",      
+        "starCount": 3245,
+        "img": "https://i.ibb.co/v1Rvvxc/csharp.jpg",
+        "icon":"https://i.ibb.co/PDPT6Cc/Ophthalmology.png"
+    }
+]
+
+
+

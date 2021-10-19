@@ -1,0 +1,6 @@
+.support{
+    @apply flex space-x-4 items-center text-3xl bg-pink-100 hover:bg-green-600 hover:text-white px-10 py-8 font-bold
+}
+.support i{
+    @apply text-blue-800
+}

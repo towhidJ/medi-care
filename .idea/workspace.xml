@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6e7237c1-305f-41d4-b752-81876b2eee31" name="Changes" comment="" />
+    <list default="true" id="6e7237c1-305f-41d4-b752-81876b2eee31" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Login/Firebase/firebase.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Login/Firebase/firebase.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Login/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Login/Login/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Register/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Register/Register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Shared/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Shared/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useFirebase.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useFirebase.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,12 +35,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Web Hero Programming JS/Pratise/travel-guru" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -68,6 +76,11 @@
       <workItem from="1634528319376" duration="12092000" />
       <workItem from="1634542066815" duration="50000" />
       <workItem from="1634542121390" duration="32000" />
+      <workItem from="1634542154920" duration="124000" />
+      <workItem from="1634567415015" duration="452000" />
+      <workItem from="1634567882046" duration="4266000" />
+      <workItem from="1634573413634" duration="23000" />
+      <workItem from="1634573749175" duration="22000" />
     </task>
     <servers />
   </component>
