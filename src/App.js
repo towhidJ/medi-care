@@ -9,6 +9,7 @@ import Contact from "./Pages/Contact/Contact";
 import Home from "./Pages/Home/Home/Home";
 import Login from "./Pages/Login/Login/Login";
 import PrivateRoute from "./Pages/Login/PrivateRoute/PrivateRoute";
+import NotFound from "./Pages/NotFound/NotFound";
 import Register from "./Pages/Register/Register";
 import ServiceDetails from "./Pages/Service/ServiceDetails/ServiceDetails";
 import Services from "./Pages/Service/Services/Services";
@@ -52,7 +53,7 @@ function App() {
                                 <Appointment></Appointment>
                             </PrivateRoute>
                             <Route path="*">
-                                <p>Not found</p>
+                                <NotFound></NotFound>
                             </Route>
                         </Switch>
                         <Footer></Footer>
