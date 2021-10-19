@@ -33,9 +33,9 @@ function App() {
                             <Route path="/service-details/:id">
                                 <ServiceDetails></ServiceDetails>
                             </Route>
-                            <Route path="/blog">
+                            <PrivateRoute path="/blog">
                                 <Blog></Blog>
-                            </Route>
+                            </PrivateRoute>
                             <Route path="/login">
                                 <Login></Login>
                             </Route>
