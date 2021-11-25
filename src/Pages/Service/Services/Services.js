@@ -1,4 +1,6 @@
 import React from "react";
+import Footer from "../../Shared/Footer/Footer";
+import Header from "../../Shared/Header/Header";
 import Service from "../Service/Service";
 import useDataBase from "./../../../hooks/useDataBase";
 
@@ -14,11 +16,15 @@ const Services = () => {
     // }, []);
 
     return (
-        <div className="grid md:grid-cols-3 gap-4">
-            {services.map((s) => (
-                <Service key={s.key} service={s}></Service>
-            ))}
-        </div>
+        <>
+            <Header />
+            <div className="grid md:grid-cols-3 gap-4">
+                {services.map((s) => (
+                    <Service key={s.key} service={s}></Service>
+                ))}
+            </div>
+            <Footer />
+        </>
     );
 };
 

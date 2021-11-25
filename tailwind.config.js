@@ -1,14 +1,15 @@
 // tailwind.config.js
 module.exports = {
-  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-  darkMode: false, // or 'media' or 'class'
-  theme: {
-    extend: {},
-  },
-  variants: {
-    extend: {
-      backgroundColor: ['active'],
+    purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+    darkMode: false, // or 'media' or 'class'
+    theme: {
+        extend: {},
     },
-  },
-  plugins: [],
-}
+    variants: {
+        extend: {
+            backgroundColor: ["active"],
+            tableLayout: ["hover", "focus"],
+            borderCollapse: ["hover", "focus"],
+        },
+    },
+};

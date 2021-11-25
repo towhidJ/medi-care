@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e7237c1-305f-41d4-b752-81876b2eee31" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Login/Firebase/firebase.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Login/Firebase/firebase.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Login/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Login/Login/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Register/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Register/Register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Shared/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Shared/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useFirebase.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useFirebase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firebase-debug.log" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +78,18 @@
       <workItem from="1634567882046" duration="4266000" />
       <workItem from="1634573413634" duration="23000" />
       <workItem from="1634573749175" duration="22000" />
+      <workItem from="1635505277624" duration="479000" />
+      <workItem from="1635524545968" duration="1086000" />
+      <workItem from="1635598024094" duration="1196000" />
+      <workItem from="1635618234526" duration="796000" />
+      <workItem from="1635661439456" duration="604000" />
+      <workItem from="1635675031620" duration="1228000" />
+      <workItem from="1636116747013" duration="1512000" />
+      <workItem from="1636129174636" duration="1113000" />
+      <workItem from="1636175749009" duration="35000" />
+      <workItem from="1636460334546" duration="242000" />
+      <workItem from="1636460681140" duration="617000" />
+      <workItem from="1636463947297" duration="49000" />
     </task>
     <servers />
   </component>

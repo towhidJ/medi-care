@@ -4,6 +4,8 @@ import { useForm } from "react-hook-form";
 import { Link, useHistory } from "react-router-dom";
 import * as Yup from "yup";
 import LoginImg from "../../images/login.jpg";
+import Footer from "../Shared/Footer/Footer";
+import Header from "../Shared/Header/Header";
 import useAuth from "./../../hooks/useAuth";
 
 const Register = () => {
@@ -28,9 +30,9 @@ const Register = () => {
 
     const onSubmit = (data, e) => {
         e.preventDefault();
-        const {email,password} = data;
-        console.log(email,password)
-        signUpWithEmail(email,password)
+        const { email, password } = data;
+        console.log(email, password);
+        signUpWithEmail(email, password)
             .then((userCredential) => {
                 setUser(userCredential.user);
                 history.push("/");
@@ -43,91 +45,95 @@ const Register = () => {
     };
 
     return (
-        <div className="bg-white mt-5">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center justify-center">
-                <div className="w-full">
-                    <img src={LoginImg} />
-                </div>
-                <div className="flex items-center h-screen w-full bg-teal-lighter">
-                    <div className="w-full bg-green-100 rounded shadow-lg p-8 m-4 md:max-w-sm md:mx-auto">
-                        <h1 className="block w-full text-center text-grey-darkest mb-6">
-                            Sign Up
-                        </h1>
-                        <form
-                            className="mb-4 md:flex md:flex-wrap md:justify-between"
-                            onSubmit={handleSubmit(onSubmit)}
-                        >
-                            <div className="flex flex-col mb-4 md:w-full">
-                                <label
-                                    className="mb-2 uppercase font-bold text-lg text-grey-darkest"
-                                    htmlFor="email"
-                                >
-                                    Email
-                                </label>
-                                <input
-                                    {...register("email")}
-                                    className="border py-2 px-3 "
-                                    type="email"
-                                    name="email"
-                                    id="email"
-                                />
-                                <span className="text-red-500">
-                                    {errors.email?.message}
-                                </span>
-                            </div>
-                            <div className="flex flex-col mb-6 md:w-full">
-                                <label
-                                    className="mb-2 uppercase font-bold text-lg text-grey-darkest"
-                                    htmlFor="password"
-                                >
-                                    Password
-                                </label>
-                                <input
-                                    {...register("password")}
-                                    className="border py-2 px-3 "
-                                    type="password"
-                                    name="password"
-                                    id="password"
-                                />
-                                <span className="text-red-500">
-                                    {errors.password?.message}
-                                </span>
-                            </div>
-                            <div className="flex flex-col mb-6 md:w-full">
-                                <label
-                                    className="mb-2 uppercase font-bold text-lg text-grey-darkest"
-                                    htmlFor="confirmPassword"
-                                >
-                                    Confirm Password
-                                </label>
-                                <input
-                                    {...register("confirmPassword")}
-                                    className="border py-2 px-3 text-grey-darkest"
-                                    type="password"
-                                    name="confirmPassword"
-                                    id="confirmPassword"
-                                />
-                                <span className="text-red-500">
-                                    {errors.confirmPassword?.message}
-                                </span>
-                            </div>
-                            <button
-                                className="block bg-red-400 hover:bg-green-600 font-extrabold text-white uppercase text-lg mx-auto p-4 rounded"
-                                type="submit"
+        <>
+            <Header />
+            <div className="bg-white mt-5">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center justify-center">
+                    <div className="w-full">
+                        <img src={LoginImg} />
+                    </div>
+                    <div className="flex items-center h-screen w-full bg-teal-lighter">
+                        <div className="w-full bg-green-100 rounded shadow-lg p-8 m-4 md:max-w-sm md:mx-auto">
+                            <h1 className="block w-full text-center text-grey-darkest mb-6">
+                                Sign Up
+                            </h1>
+                            <form
+                                className="mb-4 md:flex md:flex-wrap md:justify-between"
+                                onSubmit={handleSubmit(onSubmit)}
                             >
-                                Create Account
-                            </button>
-                        </form>
-                        <Link
-                            className="block w-full text-center no-underline text-sm text-grey-dark hover:text-grey-darker"
-                            to="/login"
-                        >
-                            Already have an account?
-                        </Link>
+                                <div className="flex flex-col mb-4 md:w-full">
+                                    <label
+                                        className="mb-2 uppercase font-bold text-lg text-grey-darkest"
+                                        htmlFor="email"
+                                    >
+                                        Email
+                                    </label>
+                                    <input
+                                        {...register("email")}
+                                        className="border py-2 px-3 "
+                                        type="email"
+                                        name="email"
+                                        id="email"
+                                    />
+                                    <span className="text-red-500">
+                                        {errors.email?.message}
+                                    </span>
+                                </div>
+                                <div className="flex flex-col mb-6 md:w-full">
+                                    <label
+                                        className="mb-2 uppercase font-bold text-lg text-grey-darkest"
+                                        htmlFor="password"
+                                    >
+                                        Password
+                                    </label>
+                                    <input
+                                        {...register("password")}
+                                        className="border py-2 px-3 "
+                                        type="password"
+                                        name="password"
+                                        id="password"
+                                    />
+                                    <span className="text-red-500">
+                                        {errors.password?.message}
+                                    </span>
+                                </div>
+                                <div className="flex flex-col mb-6 md:w-full">
+                                    <label
+                                        className="mb-2 uppercase font-bold text-lg text-grey-darkest"
+                                        htmlFor="confirmPassword"
+                                    >
+                                        Confirm Password
+                                    </label>
+                                    <input
+                                        {...register("confirmPassword")}
+                                        className="border py-2 px-3 text-grey-darkest"
+                                        type="password"
+                                        name="confirmPassword"
+                                        id="confirmPassword"
+                                    />
+                                    <span className="text-red-500">
+                                        {errors.confirmPassword?.message}
+                                    </span>
+                                </div>
+                                <button
+                                    className="block bg-red-400 hover:bg-green-600 font-extrabold text-white uppercase text-lg mx-auto p-4 rounded"
+                                    type="submit"
+                                >
+                                    Create Account
+                                </button>
+                            </form>
+                            <Link
+                                className="block w-full text-center no-underline text-sm text-grey-dark hover:text-grey-darker"
+                                to="/login"
+                            >
+                                Already have an account?
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <Footer />
+        </>
     );
 };
 
