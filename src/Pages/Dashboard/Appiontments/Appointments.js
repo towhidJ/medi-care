@@ -108,7 +108,10 @@ const Appointments = () => {
                 <tbody>
                     {appointments.map((appointment) => (
                         <>
-                            <tr className="bg-white lg:hover:bg-gray-100 flex lg:table-row flex-row lg:flex-row flex-wrap lg:flex-no-wrap mb-10 lg:mb-0">
+                            <tr
+                                key={appointment._id}
+                                className="bg-white lg:hover:bg-gray-100 flex lg:table-row flex-row lg:flex-row flex-wrap lg:flex-no-wrap mb-10 lg:mb-0"
+                            >
                                 <td className="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block lg:table-cell relative lg:static">
                                     <span className="lg:hidden absolute top-0 left-0 bg-blue-200 px-2 py-1  text-xs font-bold uppercase">
                                         Patient Name
@@ -151,34 +154,16 @@ const Appointments = () => {
                                             className={
                                                 appointment.status === "Pending"
                                                     ? "rounded bg-yellow-300 py-1 px-3 text-xs font-bold"
-                                                    : appointment.status ===
-                                                      "OnGoing"
-                                                    ? "rounded bg-yellow-500 py-1 px-3 text-xs font-bold"
-                                                    : appointment.status ===
-                                                      "Processing"
-                                                    ? "rounded bg-yellow-700 py-1 px-3 text-xs font-bold"
-                                                    : appointment.status ===
-                                                      "Shipped"
-                                                    ? "rounded bg-green-200 py-1 px-3 text-xs font-bold"
                                                     : "rounded bg-green-400 py-1 px-3 text-xs font-bold"
                                             }
                                         >
                                             {appointment?.status}
                                         </span>
-                                    ) : appointment.status !== "Complete" ? (
+                                    ) : appointment.status !== "Approved" ? (
                                         <select
                                             className={
                                                 appointment.status === "Pending"
                                                     ? "rounded bg-yellow-300 py-1 px-3 text-xs font-bold"
-                                                    : appointment.status ===
-                                                      "OnGoing"
-                                                    ? "rounded bg-yellow-500 py-1 px-3 text-xs font-bold"
-                                                    : appointment.status ===
-                                                      "Processing"
-                                                    ? "rounded bg-yellow-700 py-1 px-3 text-xs font-bold"
-                                                    : appointment.status ===
-                                                      "Shipped"
-                                                    ? "rounded bg-green-200 py-1 px-3 text-xs font-bold"
                                                     : "rounded bg-green-400 py-1 px-3 text-xs font-bold"
                                             }
                                             onChange={(e) =>
@@ -194,29 +179,12 @@ const Appointments = () => {
                                             >
                                                 {appointment.status}
                                             </option>
+
                                             <option
-                                                className="processing"
-                                                value="Processing"
+                                                className="approved"
+                                                value="Approved"
                                             >
-                                                Processing
-                                            </option>
-                                            <option
-                                                className="ongoing"
-                                                value="OnGoing"
-                                            >
-                                                On Going
-                                            </option>
-                                            <option
-                                                className="shipped"
-                                                value="Shipped"
-                                            >
-                                                Shipped
-                                            </option>
-                                            <option
-                                                className="complete"
-                                                value="Complete"
-                                            >
-                                                Complete
+                                                Approved
                                             </option>
                                         </select>
                                     ) : (
