@@ -1,10 +1,12 @@
 import React from "react";
 import { Link, Route, Switch, useRouteMatch } from "react-router-dom";
+import useAuth from "../../../hooks/useAuth";
 import Appointments from "../Appiontments/Appointments";
 import PrivateRoute from "./../../Login/PrivateRoute/PrivateRoute";
 import DashboardHome from "./../DashboardHome/DashboardHome";
 
 const Dashboard = () => {
+    const { admin } = useAuth();
     let { path, url } = useRouteMatch();
     const handleNavButton = () => {
         // grab everything we need
@@ -86,12 +88,14 @@ const Dashboard = () => {
                         >
                             Dashboard
                         </Link>
+
                         <Link
                             to={`${url}/appointments`}
                             className="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700 hover:text-white"
                         >
-                            Appointments
+                            {!admin ? "Appointments" : "Manage Appointment"}
                         </Link>
+
                         <Link
                             to="/dashboard"
                             className="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700 hover:text-white"

@@ -5,7 +5,7 @@ import Header from "../Shared/Header/Header";
 import "./Appointment.css";
 
 const Appointment = () => {
-    const { user } = useAuth();
+    const { user, admin } = useAuth();
     let userData = {
         name: user?.displayName,
         email: user?.email,
@@ -22,7 +22,7 @@ const Appointment = () => {
     const handleSubmit = (e) => {
         console.log(appointment);
 
-        fetch("http://localhost:5000/appointments", {
+        fetch("https://salty-fortress-41861.herokuapp.com/appointments", {
             method: "POST",
             headers: {
                 "content-type": "application/json",

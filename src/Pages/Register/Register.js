@@ -12,6 +12,8 @@ const Register = () => {
     const { setUser, signUpWithEmail } = useAuth();
     const history = useHistory();
     const validationSchema = Yup.object().shape({
+        name: Yup.string().required("Name is Requied"),
+        phone: Yup.string().required("Phone Number is Requied"),
         email: Yup.string()
             .required("Email is required")
             .email("Email is invalid"),
@@ -30,18 +32,9 @@ const Register = () => {
 
     const onSubmit = (data, e) => {
         e.preventDefault();
-        const { email, password } = data;
+        const { email, password, name, phone } = data;
         console.log(email, password);
-        signUpWithEmail(email, password)
-            .then((userCredential) => {
-                setUser(userCredential.user);
-                history.push("/");
-            })
-            .catch((error) => {
-                const errorCode = error.code;
-                const errorMessage = error.message;
-            });
-        return false;
+        signUpWithEmail(email, password, name, phone, history);
     };
 
     return (
@@ -52,7 +45,7 @@ const Register = () => {
                     <div className="w-full">
                         <img src={LoginImg} />
                     </div>
-                    <div className="flex items-center h-screen w-full bg-teal-lighter">
+                    <div className="flex items-center  w-full bg-teal-lighter">
                         <div className="w-full bg-green-100 rounded shadow-lg p-8 m-4 md:max-w-sm md:mx-auto">
                             <h1 className="block w-full text-center text-grey-darkest mb-6">
                                 Sign Up
@@ -63,7 +56,25 @@ const Register = () => {
                             >
                                 <div className="flex flex-col mb-4 md:w-full">
                                     <label
-                                        className="mb-2 uppercase font-bold text-lg text-grey-darkest"
+                                        className="mb-2 uppercase  text-grey-darkest"
+                                        htmlFor="name"
+                                    >
+                                        Name
+                                    </label>
+                                    <input
+                                        {...register("name")}
+                                        className="border py-2 px-3 "
+                                        type="text"
+                                        name="name"
+                                        id="name"
+                                    />
+                                    <span className="text-red-500">
+                                        {errors.name?.message}
+                                    </span>
+                                </div>
+                                <div className="flex flex-col mb-4 md:w-full">
+                                    <label
+                                        className="mb-2 uppercase text-grey-darkest"
                                         htmlFor="email"
                                     >
                                         Email
@@ -79,9 +90,27 @@ const Register = () => {
                                         {errors.email?.message}
                                     </span>
                                 </div>
+                                <div className="flex flex-col mb-4 md:w-full">
+                                    <label
+                                        className="mb-2 uppercase text-grey-darkest"
+                                        htmlFor="phone"
+                                    >
+                                        Phone
+                                    </label>
+                                    <input
+                                        {...register("phone")}
+                                        className="border py-2 px-3 "
+                                        type="text"
+                                        name="phone"
+                                        id="phone"
+                                    />
+                                    <span className="text-red-500">
+                                        {errors.phone?.message}
+                                    </span>
+                                </div>
                                 <div className="flex flex-col mb-6 md:w-full">
                                     <label
-                                        className="mb-2 uppercase font-bold text-lg text-grey-darkest"
+                                        className="mb-2 uppercase  text-grey-darkest"
                                         htmlFor="password"
                                     >
                                         Password
@@ -99,7 +128,7 @@ const Register = () => {
                                 </div>
                                 <div className="flex flex-col mb-6 md:w-full">
                                     <label
-                                        className="mb-2 uppercase font-bold text-lg text-grey-darkest"
+                                        className="mb-2 uppercase text-grey-darkest"
                                         htmlFor="confirmPassword"
                                     >
                                         Confirm Password

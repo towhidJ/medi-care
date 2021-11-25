@@ -25,30 +25,13 @@ const Login = () => {
     const formOptions = { resolver: yupResolver(validationSchema) };
 
     const loginWithGoogle = () => {
-        signInUsingGoogle()
-            .then((result) => {
-                setUser(result.user);
-                history.push(redirect_url);
-            })
-            .finally(() => {
-                setIsLoading(false);
-            });
+        signInUsingGoogle(location, history);
     };
 
     const loginWithEmail = (data, e) => {
         e.preventDefault();
         const { email, password } = data;
-        signInWithEmail(email, password)
-            .then((result) => {
-                setUser(result.user);
-                history.push(redirect_url);
-            })
-            .catch((error) => {
-                setError(error.message);
-            })
-            .finally(() => {
-                setIsLoading(false);
-            });
+        signInWithEmail(email, password, location, history);
     };
 
     const onSubmit = (data) => console.log(data);
